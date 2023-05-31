@@ -1,0 +1,28 @@
+{
+  "name": "hw-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyonns/node-hw-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "bugs": {
+    "url": "https://github.com/dyonns/node-hw-01/issues"
+  },
+  "homepage": "https://github.com/dyonns/node-hw-01#readme",
+  "dependencies": {
+    "commander": "^10.0.1",
+    "nanoid": "^4.0.2"
+  }
+}
