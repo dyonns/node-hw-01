@@ -1,4 +1,4 @@
-const logger = require("./db/contacts.js");
+const logger = require("./contacts.js");
 
 const { Command } = require("commander");
 const program = new Command();

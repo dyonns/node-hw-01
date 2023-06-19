@@ -1,9 +1,10 @@
 const fs = require("fs").promises;
 const path = require("path");
 // const nId = require("nanoid");
-// const nId = new nId();
+const shortid = require("shortid");
+const id = shortid.generate();
 
-const contactsPath = path.join(__dirname, "contacts.json");
+const contactsPath = path.join(__dirname, "db/contacts.json");
 
 async function listContacts() {
   return JSON.parse(await fs.readFile(contactsPath, "utf-8"));
@@ -18,7 +19,7 @@ async function getContactById(contactId) {
 async function addContact({ name, email, phone }) {
   const contacts = await listContacts();
 
-  const newContact = { name, email, phone };
+  const newContact = { id, name, email, phone };
 
   contacts.push(newContact);
   await fs.writeFile(contactsPath, JSON.stringify(contacts, null, "\t"));

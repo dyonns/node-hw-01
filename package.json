@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dyonns/node-hw-01#readme",
   "dependencies": {
     "commander": "^10.0.1",
-    "nanoid": "^4.0.2"
+    "nanoid": "^4.0.2",
+    "shortid": "^2.2.16"
   }
 }
